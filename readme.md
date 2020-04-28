@@ -4,6 +4,19 @@ A simple monitor displaying program for Raspberry Pi as a Downloader.
 
 ![](https://raw.githubusercontent.com/victrid-dev/victrid-dev.github.io/master/src/rpi-epaper-monitor.jpg)
 
+## Recent Update:
+
+Added an easy-to-use interface to the screen. Support 42 latin characters or 18 Chinese characters. 
+
+(Maybe it's a little small, but the screen can only do this.)
+
+## Usage:
+
+- Just run the ./main.py with python3
+- Or import this module, and run with main.write('WRITESOMETHING').
+  - It's sad that you can only write to the screen once, or it will say "Bad file descriptor" and I've got no Idea why.
+
+
 ## Using:
 
 - Raspberry Pi Zero W
