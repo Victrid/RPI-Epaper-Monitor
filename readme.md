@@ -6,16 +6,16 @@ A simple monitor displaying program for Raspberry Pi as a Downloader.
 
 ## Recent Update:
 
-Added an easy-to-use interface to the screen. Support 42 latin characters or 18 Chinese characters. 
+Added a special power off display page.
 
-(Maybe it's a little small, but the screen can only do this.)
+You may establish a service to run poweroff service automatically. See [this](https://www.golinuxcloud.com/run-script-with-systemd-before-shutdown-linux/).
 
 ## Usage:
 
 - Just run the ./main.py with python3
-- Or import this module, and run with main.write('WRITESOMETHING').
-  - It's sad that you can only write to the screen once, or it will say "Bad file descriptor" and I've got no Idea why.
-
+- ~~Or import this module, and run with main.write('WRITESOMETHING').~~
+  - ~~It's sad that you can only write to the screen once, or it will say "Bad file descriptor" and I've got no Idea why.~~
+  - Please refer to `power_critical.py`. I've got no idea how python's packages are packaged.
 
 ## Using:
 
@@ -25,7 +25,7 @@ Added an easy-to-use interface to the screen. Support 42 latin characters or 18 
 ## Dependencies:
 
 - Driver
-  - sudo raspi-config: Interfacing Options -> SPI -> Yes
+  - `sudo raspi-config`: Interfacing Options -> SPI -> Yes
   - BCM2835:
   ```
   wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.60.tar.gz
@@ -36,10 +36,10 @@ Added an easy-to-use interface to the screen. Support 42 latin characters or 18 
   sudo make check
   sudo make install
   ```
-  - APT: sudo apt install wiringpi python3-pip python3-pil python3-numpy
+  - APT: `sudo apt install wiringpi python3-pip python3-pil python3-numpy`
   - GPIO Update:
   ```
   wget https://project-downloads.drogon.net/wiringpi-latest.deb
   sudo dpkg -i wiringpi-latest.deb
   ```
-  - PIP: sudo pip3 install RPi.GPIO spidev
+  - PIP: `sudo pip3 install RPi.GPIO spidev`
