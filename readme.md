@@ -2,7 +2,7 @@
 
 A simple monitor displaying program for Raspberry Pi as a Downloader.
 
-![](https://raw.githubusercontent.com/victrid-dev/victrid-dev.github.io/master/src/rpi-epaper-monitor.jpg)
+![](https://victrid.dev/src/rpi-epaper-monitor.jpg)
 
 ## Recent Update:
 
