@@ -43,3 +43,5 @@ You may establish a service to run poweroff service automatically. See [this](ht
   sudo dpkg -i wiringpi-latest.deb
   ```
   - PIP: `sudo pip3 install RPi.GPIO spidev`
+
+PS: It's sad that my Raspberry Pi seems broken... So I'm going to archive this.
